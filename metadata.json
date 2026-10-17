@@ -1,0 +1,6 @@
+{
+  "name": "MasalaSetu B2B — Wholesale Spice Marketplace",
+  "description": "B2B wholesale marketplace connecting local spice manufacturers and private-label vendors with retail grocery stores, featuring tiered pricing, verified FSSAI compliance, order lifecycle management, and commission reconciliation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
