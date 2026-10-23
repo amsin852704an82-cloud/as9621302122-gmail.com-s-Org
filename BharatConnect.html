@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BharatConnect — भारत का अपना सोशल मीडिया</title>
+<meta name="description" content="BharatConnect — हिंदी में बोलो, अपनी कमाई करो, अपने लोगों से जुड़ो।">
+<meta name="theme-color" content="#0B1020">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#0B1020;--card:#151C2E;--line:#2A344E;--text:#fff;--muted:#9CA3AF;--soft:#D1D5DB;--saffron:#FF6B35;--green:#00C853;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:'Poppins','Noto Sans Devanagari',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:44px;height:44px;border-radius:12px;padding:2px;background:linear-gradient(135deg,#FF8A00,#FFD600,#00C853)}
+.mark span{display:flex;width:100%;height:100%;align-items:center;justify-content:center;background:var(--bg);border-radius:10px;font-weight:800;font-size:14px}
+.brand b{display:block;font-size:18px;font-weight:800;line-height:1.1}
+.brand b i{font-style:normal;color:var(--saffron)}
+.brand small{color:var(--muted);font-size:12px}
+.pill{font-size:12px;font-weight:600;color:var(--muted);border:1px solid #1F2A44;border-radius:99px;padding:6px 12px}
+main{text-align:center;padding-bottom:40px}
+.logo{width:180px;height:180px;margin:24px auto 28px;border-radius:36px;overflow:hidden;box-shadow:0 0 60px rgba(255,107,53,.35)}
+h1{font-size:clamp(2.4rem,8vw,4rem);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin:0}
+.lead{font-size:17px;font-weight:500;color:var(--soft);max-width:600px;margin:18px auto 0}
+.sub{font-size:15px;color:var(--muted);max-width:520px;margin:10px auto 0}
+.cta{display:flex;flex-direction:column;gap:14px;max-width:520px;margin:32px auto 0}
+@media(min-width:640px){.cta{flex-direction:row}}
+.btn{flex:1;display:inline-flex;align-items:center;justify-content:center;border-radius:99px;padding:15px 28px;font-weight:700;font-size:15px;font-family:inherit;cursor:pointer;text-decoration:none;color:#fff;border:1px solid var(--line);background:var(--card)}
+.btn.p{background:var(--saffron);border-color:var(--saffron);box-shadow:0 10px 30px rgba(255,107,53,.3)}
+.btn[aria-disabled="true"]{opacity:.65;cursor:not-allowed;box-shadow:none}
+:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
+.note{font-size:12px;color:var(--muted);margin-top:12px}
+h2{font-size:26px;margin:64px 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;text-align:left;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}
+.card .ic{width:48px;height:48px;border-radius:14px;background:#1F2A44;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.card h3{font-size:18px;margin:0 0 8px}
+.card p{font-size:15px;color:var(--muted);margin:0}
+.tag{display:inline-block;margin-top:14px;font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--saffron)}
+footer{border-top:1px solid #151C2E;padding:28px 20px;text-align:center;color:var(--muted);font-size:13px}
+footer small{display:block;margin-top:8px;font-size:11px;letter-spacing:.12em;color:#6B7280}
+[hidden]{display:none!important}
+.stats{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;margin-top:48px;padding:18px 24px;border:1px solid #1F2A44;border-radius:20px;background:rgba(17,23,40,.8);color:var(--muted);font-size:13px}
+.stats b{color:#fff;font-size:18px;margin-right:4px}
+.sec{max-width:760px;margin:0 auto;text-align:left}
+.join{margin-top:56px;padding:32px 24px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,rgba(255,107,53,.12),rgba(0,200,83,.08))}
+.join h2{margin:0 0 8px}
+.join .btn{display:flex;max-width:360px;margin:16px auto 0}
+.shots{display:flex;gap:16px;overflow-x:auto;padding:8px 4px;scroll-snap-type:x mandatory}
+.shot{flex:0 0 150px;height:300px;border:6px solid #1F2A44;border-radius:28px;background:var(--card) center/cover;scroll-snap-align:center}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-top:12px}
+summary{cursor:pointer;font-weight:600}
+details p,.sec p{color:var(--muted);margin:10px 0 0;font-size:15px}
+.social,.flinks{display:flex;justify-content:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.social a,.flinks a{color:var(--soft);font-size:13px;border:1px solid var(--line);border-radius:99px;padding:6px 14px;text-decoration:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand"><div class="mark"><span>BC</span></div><div><b><i>Bharat</i>Connect</b><small>भारत का अपना सोशल मीडिया</small></div></div>
+  <div class="pill" lang="en">MADE IN BHARAT</div>
+</header>
+
+<main>
+  <div class="logo">
+    <svg viewBox="0 0 100 100" width="100%" height="100%" role="img" aria-label="BharatConnect logo">
+      <rect width="100" height="33" fill="#FF8A00"/><rect width="100" height="34" y="33" fill="#fff"/><rect width="100" height="33" y="67" fill="#138808"/>
+      <text x="50" y="72" text-anchor="middle" font-family="Poppins,sans-serif" font-weight="800" font-size="54" fill="#0B1020">B</text>
+    </svg>
+  </div>
+  <h1>BharatConnect</h1>
+  <p class="lead">अपनी मिट्टी, अपनी कहानी — <b>भारत का अपना सोशल मीडिया प्लेटफॉर्म</b></p>
+  <p class="sub">हिंदी में बोलो, अपनी कमाई करो, अपने लोगों से जुड़ो।</p>
+
+  <div class="cta">
+    <a id="playBtn" class="btn p" href="#" aria-disabled="true">Google Play — जल्द आ रहा है</a>
+    <a id="apkBtn" class="btn" href="#" aria-disabled="true">APK — जल्द आ रहा है</a>
+  </div>
+  <p class="note">ऐप बहुत जल्द लॉन्च होगा।</p>
+
+  <h2>क्यों BharatConnect?</h2>
+  <p class="note" style="margin:0">देसी दिल, देसी फीचर्स</p>
+  <div class="grid">
+    <div class="card"><div class="ic" aria-hidden="true">💰</div><h3>कमाई के मौके</h3><p>क्रिएटर्स के लिए अपने कंटेंट से कमाई का रास्ता — पारदर्शी नियमों के साथ।</p><span class="tag">CREATOR FIRST</span></div>
+    <div class="card"><div class="ic" aria-hidden="true">🗣️</div><h3>अपनी भाषा में फीड</h3><p>हिंदी और दूसरी भारतीय भाषाओं में फीड। गाँव की कहानी से शहर के ट्रेंड तक, सब एक जगह।</p><span class="tag" style="color:var(--green)">अपनी भाषा</span></div>
+    <div class="card"><div class="ic" aria-hidden="true">🛡️</div><h3>भारत केंद्रित</h3><p>भारतीय यूज़र्स को ध्यान में रखकर बना प्लेटफॉर्म, साफ़ प्राइवेसी पॉलिसी के साथ।</p><span class="tag" style="color:var(--soft)">PRIVACY</span></div>
+  </div>
+<div id="stats" class="stats" hidden></div>
+
+  <section id="join" class="join">
+    <h2>सबसे पहले जुड़ो</h2>
+    <p class="sub">लॉन्च पर सबसे पहले ऐप पाओ।</p>
+    <a id="formBtn" class="btn p" href="#" aria-disabled="true">वेटलिस्ट — जल्द आ रहा है</a>
+    <button id="shareBtn" type="button" class="btn">दोस्तों को भेजो</button>
+  </section>
+
+  <section id="preview" class="sec" hidden>
+    <h2 style="text-align:center">ऐप की झलक</h2>
+    <div id="shots" class="shots"></div>
+    <a id="videoBtn" class="btn" href="#" hidden style="display:flex;max-width:320px;margin:18px auto 0">डेमो वीडियो देखो</a>
+  </section>
+
+  <section id="faq" class="sec">
+    <h2 style="text-align:center">अक्सर पूछे जाने वाले सवाल</h2>
+    <details><summary>ऐप फ्री है?</summary><p>हमारा लक्ष्य ऐप को यूज़र्स के लिए फ्री रखना है। अंतिम जानकारी लॉन्च पर यहीं बताई जाएगी।</p></details>
+    <details><summary>कमाई कैसे होगी?</summary><p>क्रिएटर कमाई के नियम अभी तय हो रहे हैं। पक्का होते ही पारदर्शी तरीके से बताएँगे। अभी कमाई की कोई गारंटी नहीं है।</p></details>
+    <details><summary>डेटा कहाँ रहेगा?</summary><p>सर्वर और डेटा नीति की पूरी जानकारी लॉन्च से पहले जल्द बताएँगे।</p></details>
+    <details><summary>कौन सी भाषाएँ मिलेंगी?</summary><p>शुरुआत हिंदी से होगी, और दूसरी भारतीय भाषाएँ जोड़ने की योजना है।</p></details>
+    <details><summary>लॉन्च कब होगा?</summary><p>तारीख़ अभी तय नहीं है। वेटलिस्ट में जुड़ने वालों को सबसे पहले बताएँगे।</p></details>
+  </section>
+
+  <section id="privacy" class="sec">
+    <h2 style="text-align:center">Privacy Policy और संपर्क</h2>
+    <p><b>कौन सा डेटा:</b> वेटलिस्ट फॉर्म में आप जो नाम, नंबर या ईमेल देते हैं, सिर्फ़ वही।</p>
+    <p><b>क्यों:</b> सिर्फ़ लॉन्च की सूचना देने और ऐप सुधारने के लिए।</p>
+    <p><b>सुरक्षा:</b> आपका डेटा आपकी अनुमति के बिना किसी तीसरे पक्ष को नहीं दिया जाएगा।</p>
+    <p><b>डिलीट कराना:</b> अपना डेटा हटवाने के लिए हमें ईमेल करें।</p>
+    <a id="mailBtn" class="btn" href="#" hidden style="display:flex;max-width:320px;margin:18px auto 0">संपर्क करो</a>
+  </section>
+</main>
+</div>
+
+<footer>
+  <div id="social" class="social" hidden>
+    <a id="waBtn" href="#" hidden aria-label="WhatsApp चैनल से जुड़ो">WhatsApp</a>
+    <a id="igBtn" href="#" hidden aria-label="Instagram पर फ़ॉलो करो">Instagram</a>
+    <a id="ytBtn" href="#" hidden aria-label="YouTube चैनल देखो">YouTube</a>
+  </div>
+  <div class="flinks"><a href="#privacy">Privacy Policy</a><a href="#faq">FAQ</a></div>
+  <div>© 2026 BharatConnect | <span lang="en">Made in Bharat</span></div>
+  <small>अपनी मिट्टी • अपनी कहानी • अपना प्लेटफॉर्म</small>
+</footer>
+
+<script>
+// Launch होने पर बस ये दो लिंक भर दो:
+var PLAY_URL = "";   // जैसे https://play.google.com/store/apps/details?id=...
+var APK_URL  = "";   // जैसे GitHub Releases की APK फ़ाइल का लिंक
+(function(){
+  function set(id, url, label){
+    var a = document.getElementById(id);
+    if(!a || !url) return;
+    a.href = url; a.textContent = label; a.removeAttribute('aria-disabled');
+    a.target = '_blank'; a.rel = 'noopener noreferrer';
+  }
+  set('playBtn', PLAY_URL, 'Google Play पर खोलो');
+  set('apkBtn', APK_URL, 'APK Download करो');
+  document.querySelectorAll('a[aria-disabled="true"]').forEach(function(a){
+    a.addEventListener('click', function(e){ if(a.getAttribute('aria-disabled')==='true') e.preventDefault(); });
+  });
+})();
+</script>
+<script>
+// सारे लिंक और वैल्यू बस यहीं भरो। खाली हों तो वह हिस्सा अपने-आप छिप जाएगा।
+var CONFIG = {
+  FORM_URL: "",        // Google Form का लिंक
+  VIDEO_URL: "",       // YouTube डेमो वीडियो का लिंक
+  SHOTS: [],           // स्क्रीनशॉट इमेज के लिंक, जैसे ["shot1.png","shot2.png"]
+  WHATSAPP_URL: "",
+  INSTAGRAM_URL: "",
+  YOUTUBE_URL: "",
+  CONTACT_EMAIL: "",   // जैसे name@example.com
+  SHARE_URL: "",       // खाली हो तो इसी पेज का लिंक शेयर होगा
+  WAITLIST_COUNT: "",  // असली संख्या ही भरो
+  LANGUAGES: ""        // जैसे "1" या "5"
+};
+(function(){
+  var $ = function(i){ return document.getElementById(i); };
+  function link(id, url, text){
+    var a = $(id); if(!a || !url) return false;
+    a.href = url; a.hidden = false; a.removeAttribute('aria-disabled');
+    if(url.indexOf('mailto:') !== 0){ a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+    if(text) a.textContent = text;
+    return true;
+  }
+  link('formBtn', CONFIG.FORM_URL, 'वेटलिस्ट में जुड़ो');
+  link('videoBtn', CONFIG.VIDEO_URL);
+  if(CONFIG.CONTACT_EMAIL) link('mailBtn', 'mailto:' + CONFIG.CONTACT_EMAIL);
+  var s = [link('waBtn', CONFIG.WHATSAPP_URL), link('igBtn', CONFIG.INSTAGRAM_URL), link('ytBtn', CONFIG.YOUTUBE_URL)];
+  if(s.indexOf(true) > -1) $('social').hidden = false;
+
+  var shots = $('shots');
+  CONFIG.SHOTS.forEach(function(u){
+    var d = document.createElement('div'); d.className = 'shot';
+    d.style.backgroundImage = 'url("' + u + '")'; shots.appendChild(d);
+  });
+  if(!CONFIG.SHOTS.length) shots.hidden = true;
+  if(CONFIG.SHOTS.length || CONFIG.VIDEO_URL) $('preview').hidden = false;
+
+  var items = [['WAITLIST_COUNT','वेटलिस्ट में लोग'],['LANGUAGES','भाषाएँ']], box = $('stats');
+  items.forEach(function(it){
+    var v = CONFIG[it[0]]; if(!v) return;
+    var sp = document.createElement('span'), b = document.createElement('b');
+    b.textContent = v; sp.appendChild(b); sp.appendChild(document.createTextNode(it[1])); box.appendChild(sp);
+  });
+  if(box.children.length) box.hidden = false;
+
+  $('shareBtn').addEventListener('click', function(){
+    var url = CONFIG.SHARE_URL || location.href;
+    var txt = 'BharatConnect — भारत का अपना सोशल मीडिया। यहाँ देखो:';
+    if(navigator.share){ navigator.share({title:'BharatConnect', text:txt, url:url}).catch(function(){}); }
+    else { window.open('https://wa.me/?text=' + encodeURIComponent(txt + ' ' + url), '_blank', 'noopener'); }
+  });
+})();
+</script>
+</body>
+</html>
